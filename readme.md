@@ -72,7 +72,7 @@ ii) En TCP pakke kan være på rundt 1500 bytes. Blir den større enn det, kan d
 
 NB: Nå skrev jeg pakker som jo eksisterer for TCP, men at man ikke kan se de. TCP håndterer data i form av segmenter.
 
-iii) Fragmentering oppstår når lagringsplass ikke brukes effektivt, og reduserer da både kapasitet og opptreden. Hvordan fragmentering oppstår, avhenger av hvordan datamaskinen du bruker lagrer filer. Hvis en fil som behøver å lagres er for stor til å passe de ledige plassene i driven, som for eksempel en stor filmfil på mange GB. Når dette skjer, så må den delen av operativsystemet som kontroller hvordan filer lagres ta en avgjørelse om hvor filen skal lagres, og noen ganger er den beste avgjørelsen og dele filen opp i mange mindre deler. Man kan løse fragmenteringsproblemer ved å sette til side plass om det skulle trengs. (Pre-Allocation).
+iii) Fragmentering oppstår når lagringsplass ikke brukes effektivt, og reduserer da både kapasitet og opptreden. Hvordan fragmentering oppstår, avhenger av hvordan datamaskinen du bruker lagrer filer. Hvis en fil som behøver å lagres er for stor til å passe de ledige plassene i driven, som for eksempel en stor filmfil på mange GB. Når dette skjer, så må den delen av operativsystemet som kontrollerer hvordan filer lagres ta en avgjørelse om hvor filen skal lagres, og noen ganger er den beste avgjørelsen og dele filen opp i mange mindre deler. Man kan løse fragmenteringsproblemer ved å sette til side plass om det skulle trengs. (Pre-Allocation).
 
 iv)
 TCP: Sending og mottak av email, SMS service, musikkstreaming.
