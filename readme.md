@@ -25,8 +25,15 @@ Nils Fredrik Iselvmo Bjerk
 
 1 a og b) 
 
+![Bilde1](https://raw.githubusercontent.com/IS105-Gruppe05/ICA07/master/Bilder/Bilde1.png)
+
 c)
 I:
+
+
+![Bilde2](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde2.png?raw=true)
+
+![Bilde3](https://i.gyazo.com/5e479a1aed9f95dc1130a30be5e0ee6c.png)
  
  
 
@@ -39,6 +46,8 @@ I:
 
 
 1)	Ca 20% for selve transporten (Spør janis om hjelp)
+
+![Bilde4](https://i.gyazo.com/5e479a1aed9f95dc1130a30be5e0ee6c.png)
  
 
 
@@ -66,6 +75,9 @@ ii: Over NIC.
 
 Oppgave 2 (TCP)
 a) 
+
+
+![Bilde5](https://i.gyazo.com/5e479a1aed9f95dc1130a30be5e0ee6c.png)
 
 b) 
 
