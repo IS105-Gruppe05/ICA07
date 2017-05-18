@@ -1,1 +1,1 @@
-oidjvpOIDMVPmndpmDPIMDP
+oppgave 1 inneholder encoding i henhold til eksempelet i oppgaveteksten. får ikke til decoding, samt handshake/key-exchange.

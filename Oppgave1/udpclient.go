@@ -19,7 +19,7 @@ func main() {
 	}
 
 	key := []byte("AES256Key-32Characters1234567890")
-	plaintext := []byte("testmeld")
+	plaintext := []byte("test og sånn")
 
 	block, err := aes.NewCipher(key)
 	if err != nil {
@@ -32,8 +32,8 @@ func main() {
 		panic(err.Error())
 
 	}
-	fmt.Fprintf(conn, "%x\n", nonce)
-	fmt.Printf("%x\n", nonce)
+	//fmt.Fprintf(conn, "%x\n", nonce)
+	//fmt.Printf("%x\n", nonce)
 
 	aesgcm, err := cipher.NewGCM(block)
 	if err != nil {
@@ -41,9 +41,9 @@ func main() {
 	}
 
 	ciphertext := aesgcm.Seal(nil, nonce, plaintext, nil)
-	fmt.Printf("%x\n", ciphertext)
+	//fmt.Printf("%x\n", ciphertext)
 
-	fmt.Fprintf(conn, "%x\n", ciphertext)
+	fmt.Fprintf(conn, "Encoded message:%x\n Public key:%x \n", ciphertext, nonce)
 
 	_, err = bufio.NewReader(conn).Read(p)
 	if err == nil {

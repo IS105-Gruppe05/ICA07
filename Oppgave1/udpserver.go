@@ -1,6 +1,9 @@
 package main
 
 import (
+	"crypto/aes"
+	"crypto/cipher"
+	"encoding/hex"
 	"fmt"
 	"net"
 )
@@ -33,29 +36,30 @@ func main() {
 			continue
 
 		}
-		/*	key := []byte("AES256Key-32Characters1234567890")
-			ciphertext, _ := hex.DecodeString("c6805593e5911e3e7f12dd44c4642e647e0f4c17184632c7")
 
-			nonce, _ := hex.DecodeString("7413e381df7cbf94fd01b4dd")
+		key := []byte("AES256Key-32Characters1234567890")
+		ciphertext, _ := hex.DecodeString("965112884118a19f8b4f6483027ef84daa50d526973dfd84ef2200b5e9")
 
-			block, err := aes.NewCipher(key)
-			if err != nil {
-				panic(err.Error())
-			}
+		nonce, _ := hex.DecodeString("ab35ca68732c41b0b5e934ed")
 
-			aesgcm, err := cipher.NewGCM(block)
-			if err != nil {
-				panic(err.Error())
-			}
+		block, err := aes.NewCipher(key)
+		if err != nil {
+			panic(err.Error())
+		}
 
-			plaintext, err := aesgcm.Open(nil, nonce, ciphertext, nil)
-			if err != nil {
-				panic(err.Error())
-			}
+		aesgcm, err := cipher.NewGCM(block)
+		if err != nil {
+			panic(err.Error())
+		}
 
-			fmt.Printf("%s\n", plaintext)
-			// Output: exampleplaintext
-		*/
+		plaintext, err := aesgcm.Open(nil, nonce, ciphertext, nil)
+		if err != nil {
+			panic(err.Error())
+		}
+
+		fmt.Printf("%s\n", plaintext)
+		// Output: exampleplaintext
+
 		go sendResponse(ser, remoteaddr)
 	}
 
