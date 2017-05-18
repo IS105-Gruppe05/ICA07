@@ -32,7 +32,7 @@ I:
 
 ![Bilde4](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde4.png?raw=true)
  
-2) Mange ulike tjenester begrenser de største UDP pakkene til rundt 576 bytes ( som for eksempel dns). Det er mulig å gå over ca 500 bytes men da risikerer man packet loss og andre problemer har større sannsynlighet for å oppstå. 512 bytes er en fin størrelse, som blir brukt flere steder og dermed takler ulike rutere denne pakkestørrelsen. For IPv6 kan pakkene være av større størrelse på rundt 1472-1500. Det er viktig å trekke fra IPV4/IPv6 header, og UDP header for begge IP typene.
+2) Mange ulike tjenester begrenser de største UDP pakkene til rundt 1472(Trekke ifra UDP og IP header på henholdsvis 8 og 20bytes.). Det er mulig å gå over ca 1472 bytes men da risikerer man packet loss og andre problemer har større sannsynlighet for å oppstå. Når vi referrer til det største en UDP pakke kan være, så tar vi i betrakning at pakkene brytes opp i biter pga Ethernet 2s MTU(Maximum transmission unit) begrensning.. Dette er noe vi også gjør for TCP pakker, som kommer lenger ned.
 
 ii: Over NIC.
 1)
