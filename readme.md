@@ -65,7 +65,7 @@ i) De største forskjellene mellom UDP og TCP er at UDP ikke trenger tilkobling,
 
 Når det gjelder rekkefølge av meldinger, så vil man med TCP ikke måtte bekymre seg over at data kan forekomme i feil rekkefølge. med UDP så vet man ikke hvilken melding som ble sendt ut først, hvis man for eksempel sender ut to meldinger.
 
-Om et program bruker TCP eller UDP er opp til utviklerne, og kommer an på hva programmet trenger. Ønsker du feil-korrigering og en sterk tilkobling så er TCP det bedre valget. UDP brukes der hastighet er viktig, og nettverket/ operativsystemet trenger ikke gjøre mye for å oversette data som kommer fra pakkene.
+Om et program bruker TCP eller UDP er opp til utviklerne, og kommer an på hva programmet trenger. Ønsker du feil-korrigering og en sterk tilkobling så er TCP det bedre valget. UDP brukes der hastighet er viktig, og nettverket/ operativsystemet ikke trenger å gjøre mye for å oversette data som kommer fra pakkene.
 
 
 ii) En TCP pakke kan være på rundt 1500 bytes. Blir den større enn det, kan det by på flere problemer som tap av data, pakke forkortelse osv. Det er som regel lurt å være under den øverste grensen på 1500, siden man må regne med data for Ip/TCP header ( 20 bytes hver ca)  osv som kan gjøre at du kommer over toppen. 1400 bytes før man legger til bytes for IP og TCP header, gjør at man kommer under grensen der problemer lettere kan oppstå. Hvis man er over 1500 bytes kan en løsning være å dele opp i to pakker i stedet. 
