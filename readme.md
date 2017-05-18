@@ -6,23 +6,6 @@ Navnliste: Abdikani Gureye, Brede Knutsen Meli, Eirik Aanestad Fintland, Jan Kev
 
 Midlertidig innlevering, vi er enda ikke ferdige med alle oppgavene i ICA07.
 
-
-
-
-Ica 7
-
-Medlemsliste: 
-Abdikani Gureye
-Brede Knutsen Meli
-Eirik Aanestad Fintland
-Jan Kevin Henriksen
-Mats Skjærvik
-Mikael Kimerud
-Morten Johan Mygland
-Nils Fredrik Iselvmo Bjerk
-
-
-
 1 a og b) 
 
 ![Bilde1](https://raw.githubusercontent.com/IS105-Gruppe05/ICA07/master/Bilder/Bilde1.png)
@@ -33,7 +16,7 @@ I:
 
 ![Bilde2](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde2.png?raw=true)
 
-![Bilde3](https://i.gyazo.com/5e479a1aed9f95dc1130a30be5e0ee6c.png)
+![Bilde3](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde3.png?raw=true)
  
  
 
@@ -47,10 +30,8 @@ I:
 
 1)	Ca 20% for selve transporten (Spør janis om hjelp)
 
-![Bilde4](https://i.gyazo.com/5e479a1aed9f95dc1130a30be5e0ee6c.png)
+![Bilde4](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde4.png?raw=true)
  
-
-
 2) Mange ulike tjenester begrenser de største UDP pakkene til rundt 576 bytes ( som for eksempel dns). Det er mulig å gå over ca 500 bytes men da risikerer man packet loss og andre problemer har større sannsynlighet for å oppstå. 512 bytes er en fin størrelse, som blir brukt flere steder og dermed takler ulike rutere denne pakkestørrelsen. For IPv6 kan pakkene være av større størrelse på rundt 1472-1500. Det er viktig å trekke fra IPV4/IPv6 header, og UDP header for begge IP typene.
 
 ii: Over NIC.
@@ -76,8 +57,7 @@ ii: Over NIC.
 Oppgave 2 (TCP)
 a) 
 
-
-![Bilde5](https://i.gyazo.com/5e479a1aed9f95dc1130a30be5e0ee6c.png)
+![Bilde5](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde5.png?raw=true)
 
 b) 
 
