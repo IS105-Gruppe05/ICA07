@@ -1,5 +1,5 @@
-﻿# ICA07
- 
+# ICA07
+
 Navnliste: Abdikani Gureye, Brede Knutsen Meli, Eirik Aanestad Fintland, Jan Kevin Henriksen, Mats Skjærvik, Mikael Kimerud, Morten Johan Mygland, Nils Fredrik Iselvmo Bjerk.
 
 - I denne oppgaven har alle bidratt. Ikke alle jobber på hver sin maskin, vi jobber av og til bare på noen av pcene og det er da de som laster opp det som er gjort. Derfor vil det ikke alltid være at alle har pushet opp noe til github.
@@ -18,7 +18,16 @@ http://www.sohrabvakharia.in/practical-3-diffie-hellman-key-exchange-algorithm/
 https://gist.github.com/manishtpatel/8222606
 
 
-## 1 a og b) 
+## 1 a og b)
+
+UDP klient og server kjøres lokalt. Det er nødvendig å opprette to terminaler for å få kjørt prosessen. En til server og en til klient. Outputen i server vil da være meldingen fra klient "Møte Fr 5.5 14:45 Flåklypa".
+
+```
+go run udpserver.go
+```
+```
+go run udpclient.go
+```
 
 !![Alt Text](https://raw.githubusercontent.com/IS105-Gruppe05/ICA07/master/Bilder/Bilde1.png)
 
@@ -28,8 +37,8 @@ https://gist.github.com/manishtpatel/8222606
 ![Alt Text](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde2.png)
 
 ![Alt Text](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde3.png?raw=true)
- 
- 
+
+
 
 
 
@@ -42,11 +51,16 @@ https://gist.github.com/manishtpatel/8222606
 Med wireshark kan vi se hvor mange bytes som sendes over udp med meldingen vår "Møte Fr 5.5 14:45 Flåklypa". Vi fanget opp totalt antall bytes71, hvor headeren opptar 20 bytes. Videre i ser vi at total lengde er på 57.
 
 ![Alt Text](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde4.png?raw=true)
- 
+
 ## i 2)
 Mange ulike tjenester begrenser de største UDP pakkene til rundt 1472(Trekke ifra UDP og IP header på henholdsvis 8 og 20bytes.). Det er mulig å gå over ca 1472 bytes men da risikerer man packet loss og andre problemer har større sannsynlighet for å oppstå. Når vi referrer til det største en UDP pakke kan være, så tar vi i betrakning at pakkene brytes opp i biter pga Ethernet 2s MTU(Maximum transmission unit) begrensning.. Dette er noe vi også gjør for TCP pakker, som kommer lenger ned.
 ## ii: Over NIC.
 ## ii 1)
+
+![Alt text](https://i.gyazo.com/432f797006229363553698bbb662e67f.png)
+
+Her kan vi se prosenten på protokollen på UDP og TCP pakker.
+
 ## ii 2)
 
 I wireshark kan vi filtrere etter protocoll for å finne de pakkene vi er interisert i. Det er mulig å kombinere filterkrav med hjelp av opperatører som ```&&``` (and) og ```||``` (or).
@@ -55,7 +69,7 @@ I wireshark kan vi filtrere etter protocoll for å finne de pakkene vi er interi
 ```ip.proto == "UDP"```
 
 
-## ii 3)	
+## ii 3)
 
 
 
@@ -73,11 +87,20 @@ I wireshark kan vi filtrere etter protocoll for å finne de pakkene vi er interi
 
 
 ## Oppgave 2 (TCP)
-## a) 
+## a)
+
+TCP server og klient kjører lokalt og trenger derfor to terminalvinduer for å utføre prosessen. Man kan skrive valgfrie meldinger som input i klient som sendes til server.
+
+```
+go run tcp_server.go
+```
+```
+go run tcp_client.go
+```
 
 ![Alt Text](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde5.png?raw=true)
 
-## b) 
+## b)
 
 ## i)
 De største forskjellene mellom UDP og TCP er at UDP ikke trenger tilkobling, det vil si at når data eller meldinger sendes, vet man ikke om den kommer frem eller blir tapt på veien mellom sender og mottaker. TCP er tilkoblings-orientert, som vil si at når en melding blir sendt så vil meldingen komme frem så lenge tilkoblingen ikke blir brutt. Hvis tilkoblingen skulle vise seg å bli brutt så vil serveren fremdeles spørre etter den tapte delen.
@@ -88,7 +111,7 @@ Om et program bruker TCP eller UDP er opp til utviklerne, og kommer an på hva p
 
 
 ## ii)
-En TCP pakke kan være på rundt 1500 bytes når man sender pakker over nettverk (Ethernet2 MTU). Blir den større enn det, kan det by på flere problemer som tap av data, pakke forkortelse osv. Det er som regel lurt å være under den øverste grensen på 1500, siden man må regne med data for Ip/TCP header ( 20 bytes hver ca)  osv som kan gjøre at du kommer over toppen. 1400 bytes før man legger til bytes for IP og TCP header, gjør at man kommer under grensen der problemer lettere kan oppstå. Hvis man er over 1500 bytes kan en løsning være å dele opp i to pakker i stedet. 
+En TCP pakke kan være på rundt 1500 bytes når man sender pakker over nettverk (Ethernet2 MTU). Blir den større enn det, kan det by på flere problemer som tap av data, pakke forkortelse osv. Det er som regel lurt å være under den øverste grensen på 1500, siden man må regne med data for Ip/TCP header ( 20 bytes hver ca)  osv som kan gjøre at du kommer over toppen. 1400 bytes før man legger til bytes for IP og TCP header, gjør at man kommer under grensen der problemer lettere kan oppstå. Hvis man er over 1500 bytes kan en løsning være å dele opp i to pakker i stedet.
 
 NB: Nå skrev jeg pakker som jo eksisterer for TCP, men at man ikke kan se de. TCP håndterer data i form av segmenter.
 
@@ -102,5 +125,38 @@ UDP:  - Voice over IP. Eksempel: Du bruker Skype/Viber og har en videokonferanse
 
 
 ## Oppgave 3:
+
 ## a)
+
+Både UDP og TCP klientene sender en kryptert melding over til sine representative servere. Opperasjonen foregår lokalt og det må derfor benyttes to terminaler.
+
+```
+go run udpserver.go
+```
+```
+go run udpclient.go
+```
+
+```
+go run tcpserver.go
+```
+```
+go run tcpclient.go
+```
+
 ## b)
+
+Vi fikk ikke til å implementere Diffie-Hellman nøkkelutveksling for klient-server i Golang, og greide heller ikke å forstå hvordan verktøy som NaCL fungerte, så vi valgte å se etter implementasjoner i Java og prøve å reversere det til Golang-kode. Dette gikk heller ikke fordi vi ikke fant noe tilsvarende java.math.BigInteger i Golang. Vi prøvde å implementere primtall-sortering i Golang, men valgte å stoppe når vi kom til primitive  røtter av primtall når vi innså at det ville blitt vår egen implementering av nøkkelutveksling, som er utenfor våre egenskaper på dette tidspunktet.
+Vi har vedlagt inputtest.go som sorterer primtall, og javakode i diffie-hellman.java og en jar-fil som viser en lokal form av Diffie-Hellman.
+
+diffie-hellman.jar kjøres via
+
+```
+java -jar diffie-hellman.jar
+```
+
+og inputtest.go kan kjøres via
+
+```
+go run inputtest.go
+```
