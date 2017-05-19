@@ -24,6 +24,11 @@ https://gist.github.com/manishtpatel/8222606
 
 ## c)
 
+I wireshark kan vi filtrere etter protocoll for å finne de pakkene vi er interisert i. Det er mulig å kombinere filterkrav med hjelp av opperatører som && (and) og || (or).
+
+```ip.proto == "TCP"```
+```ip.proto == "UDP"```
+
 
 ![Alt Text](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde2.png)
 
