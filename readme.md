@@ -145,3 +145,6 @@ go run tcpclient.go
 ```
 
 ## b)
+
+Vi fikk ikke til å implementere Diffie-Hellman nøkkelutveksling for klient-server i Golang, og greide heller ikke å forstå hvordan verktøy som NaCL fungerte, så vi valgte å se etter implementasjoner i Java og prøve å reversere det til Golang-kode. Dette gikk heller ikke fordi vi ikke fant noe tilsvarende java.math.BigInteger i Golang. Vi prøvde å implementere primtall-sortering i Golang, men valgte å stoppe når vi kom til primitive  røtter av primtall når vi innså at det ville blitt vår egen implementering av nøkkelutveksling, som er utenfor våre egenskaper på dette tidspunktet. 
+Vi har vedlagt inputtest.go som sorterer primtall, og javakode i diffie-hellman.java og en jar-fil som viser en lokal form av Diffie-Hellman. 
