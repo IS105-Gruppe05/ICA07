@@ -20,14 +20,14 @@ https://gist.github.com/manishtpatel/8222606
 
 ## 1 a og b) 
 
-![Bilde1](https://raw.githubusercontent.com/IS105-Gruppe05/ICA07/master/Bilder/Bilde1.png)
+!![Alt Text](https://raw.githubusercontent.com/IS105-Gruppe05/ICA07/master/Bilder/Bilde1.png)
 
 ## c)
 
 
-![Bilde2]https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde2.png
+![Alt Text](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde2.png)
 
-![Bilde3](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde3.png?raw=true)
+![Alt Text](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde3.png?raw=true)
  
  
 
@@ -41,7 +41,7 @@ https://gist.github.com/manishtpatel/8222606
 ## i 1)
 Med wireshark kan vi se hvor mange bytes som sendes over udp med meldingen vår "Møte Fr 5.5 14:45 Flåklypa". Vi fanget opp totalt antall bytes71, hvor headeren opptar 20 bytes. Videre i ser vi at total lengde er på 57.
 
-![Bilde4](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde4.png?raw=true)
+![Alt Text](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde4.png?raw=true)
  
 ## i 2)
 Mange ulike tjenester begrenser de største UDP pakkene til rundt 1472(Trekke ifra UDP og IP header på henholdsvis 8 og 20bytes.). Det er mulig å gå over ca 1472 bytes men da risikerer man packet loss og andre problemer har større sannsynlighet for å oppstå. Når vi referrer til det største en UDP pakke kan være, så tar vi i betrakning at pakkene brytes opp i biter pga Ethernet 2s MTU(Maximum transmission unit) begrensning.. Dette er noe vi også gjør for TCP pakker, som kommer lenger ned.
@@ -69,7 +69,7 @@ Mange ulike tjenester begrenser de største UDP pakkene til rundt 1472(Trekke if
 ## Oppgave 2 (TCP)
 ## a) 
 
-![Bilde5](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde5.png?raw=true)
+![Alt Text](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde5.png?raw=true)
 
 ## b) 
 
