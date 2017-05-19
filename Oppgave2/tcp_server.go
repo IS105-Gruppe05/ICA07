@@ -13,7 +13,7 @@ func main() {
 
 	for {
 		message, _ := bufio.NewReader(conn).ReadString('\n')
-		fmt.Print("Message Received:", string(message))
+		fmt.Print(string(message))
 		newmessage := strings.ToUpper(message)
 		conn.Write([]byte(newmessage + "\n"))
 	}
