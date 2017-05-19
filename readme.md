@@ -5,6 +5,7 @@ Navnliste: Abdikani Gureye, Brede Knutsen Meli, Eirik Aanestad Fintland, Jan Kev
 - I denne oppgaven har alle bidratt. Ikke alle jobber på hver sin maskin, vi jobber av og til bare på noen av pcene og det er da de som laster opp det som er gjort. Derfor vil det ikke alltid være at alle har pushet opp noe til github.
 
 Koden i dette repositoriet er modifisert og/eller inspirert fra flere kilder:
+
 http://stackoverflow.com/a/26032240
 https://austburn.me/posts/creating_a_secure_server_in_golang
 http://www.minaandrawos.com/2016/05/14/udp-vs-tcp-in-golang/
