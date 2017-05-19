@@ -15,8 +15,6 @@ http://www.minaandrawos.com/2016/05/14/udp-vs-tcp-in-golang/
 http://www.sohrabvakharia.in/practical-3-diffie-hellman-key-exchange-algorithm/
 
 
-Midlertidig innlevering, vi er enda ikke ferdige med alle oppgavene i ICA07.
-
 ## 1 a og b) 
 
 ![Bilde1](https://raw.githubusercontent.com/IS105-Gruppe05/ICA07/master/Bilder/Bilde1.png)
