@@ -39,7 +39,7 @@ https://gist.github.com/manishtpatel/8222606
 
 
 ## i 1)
-Ca 20% for selve transporten (Spør janis om hjelp)
+Med wireshark kan vi se hvor mange bytes som sendes over udp med meldingen vår "Møte Fr 5.5 14:45 Flåklypa". Vi fanget opp totalt antall bytes71, hvor headeren opptar 20 bytes. Videre i ser vi at total lengde er på 57.
 
 ![Bilde4](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde4.png?raw=true)
  
