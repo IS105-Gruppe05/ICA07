@@ -7,13 +7,10 @@ Navnliste: Abdikani Gureye, Brede Knutsen Meli, Eirik Aanestad Fintland, Jan Kev
 Koden i dette repositoriet er modifisert og/eller inspirert fra flere kilder:
 
 http://stackoverflow.com/a/26032240
-
 https://austburn.me/posts/creating_a_secure_server_in_golang
-
 http://www.minaandrawos.com/2016/05/14/udp-vs-tcp-in-golang/
-
 http://www.sohrabvakharia.in/practical-3-diffie-hellman-key-exchange-algorithm/
-
+https://gist.github.com/manishtpatel/8222606
 
 ## 1 a og b) 
 
