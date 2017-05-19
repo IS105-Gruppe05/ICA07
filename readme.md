@@ -20,6 +20,15 @@ https://gist.github.com/manishtpatel/8222606
 
 ## 1 a og b) 
 
+UDP klient og server kjøres lokalt. Det er nødvendig å opprette to terminaler for å få kjørt prosessen. En til server og en til klient. Outputen i server vil da være meldingen fra klient "Møte Fr 5.5 14:45 Flåklypa".
+
+```
+go run udpserver.go
+```
+```
+go run udpclient.go
+```
+
 !![Alt Text](https://raw.githubusercontent.com/IS105-Gruppe05/ICA07/master/Bilder/Bilde1.png)
 
 ## c)
@@ -80,6 +89,15 @@ I wireshark kan vi filtrere etter protocoll for å finne de pakkene vi er interi
 ## Oppgave 2 (TCP)
 ## a) 
 
+TCP server og klient kjører lokalt og trenger derfor to terminalvinduer for å utføre prosessen. Man kan skrive valgfrie meldinger som input i klient som sendes til server.
+
+```
+go run tcp_server.go
+```
+```
+go run tcp_client.go
+```
+
 ![Alt Text](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde5.png?raw=true)
 
 ## b) 
@@ -107,5 +125,23 @@ UDP:  - Voice over IP. Eksempel: Du bruker Skype/Viber og har en videokonferanse
 
 
 ## Oppgave 3:
+
 ## a)
+
+Både UDP og TCP klientene sender en kryptert melding over til sine representative servere. Opperasjonen foregår lokalt og det må derfor benyttes to terminaler.
+
+```
+go run udpserver.go
+```
+```
+go run udpclient.go
+```
+
+```
+go run tcpserver.go
+```
+```
+go run tcpclient.go
+```
+
 ## b)
