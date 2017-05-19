@@ -25,7 +25,7 @@ https://gist.github.com/manishtpatel/8222606
 ## c)
 
 
-![Bilde2](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde2.png?raw=true)
+![Bilde2]https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde2.png
 
 ![Bilde3](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde3.png?raw=true)
  
