@@ -29,6 +29,15 @@ go run udpserver.go
 go run udpclient.go
 ```
 
+UDP klient og server kjøres lokalt. Det er nødvendig å opprette to terminaler for å få kjørt prosessen. En til server og en til klient. Outputen i server vil da være meldingen fra klient "Møte Fr 5.5 14:45 Flåklypa".
+
+```
+go run udpserver.go
+```
+```
+go run udpclient.go
+```
+
 !![Alt Text](https://raw.githubusercontent.com/IS105-Gruppe05/ICA07/master/Bilder/Bilde1.png)
 
 ## c)
@@ -59,7 +68,11 @@ Mange ulike tjenester begrenser de største UDP pakkene til rundt 1472(Trekke if
 
 ![Alt text](https://i.gyazo.com/432f797006229363553698bbb662e67f.png)
 
+<<<<<<< HEAD
 Her kan vi se prosenten på protokollen på UDP og TCP pakker.
+=======
+Her kan vi se prosenten på protokollen på UDP og TCP pakker. 
+>>>>>>> dc10d6e2b053d5ce086b6dccc3bfaaa8c11906ec
 
 ## ii 2)
 
@@ -88,6 +101,15 @@ I wireshark kan vi filtrere etter protocoll for å finne de pakkene vi er interi
 
 ## Oppgave 2 (TCP)
 ## a)
+
+TCP server og klient kjører lokalt og trenger derfor to terminalvinduer for å utføre prosessen. Man kan skrive valgfrie meldinger som input i klient som sendes til server.
+
+```
+go run tcp_server.go
+```
+```
+go run tcp_client.go
+```
 
 TCP server og klient kjører lokalt og trenger derfor to terminalvinduer for å utføre prosessen. Man kan skrive valgfrie meldinger som input i klient som sendes til server.
 
@@ -146,6 +168,7 @@ go run tcpclient.go
 
 ## b)
 
+<<<<<<< HEAD
 Vi fikk ikke til å implementere Diffie-Hellman nøkkelutveksling for klient-server i Golang, og greide heller ikke å forstå hvordan verktøy som NaCL fungerte, så vi valgte å se etter implementasjoner i Java og prøve å reversere det til Golang-kode. Dette gikk heller ikke fordi vi ikke fant noe tilsvarende java.math.BigInteger i Golang. Vi prøvde å implementere primtall-sortering i Golang, men valgte å stoppe når vi kom til primitive  røtter av primtall når vi innså at det ville blitt vår egen implementering av nøkkelutveksling, som er utenfor våre egenskaper på dette tidspunktet.
 Vi har vedlagt inputtest.go som sorterer primtall, og javakode i diffie-hellman.java og en jar-fil som viser en lokal form av Diffie-Hellman.
 
@@ -160,3 +183,7 @@ og inputtest.go kan kjøres via
 ```
 go run inputtest.go
 ```
+=======
+Vi fikk ikke til å implementere Diffie-Hellman nøkkelutveksling for klient-server i Golang, og greide heller ikke å forstå hvordan verktøy som NaCL fungerte, så vi valgte å se etter implementasjoner i Java og prøve å reversere det til Golang-kode. Dette gikk heller ikke fordi vi ikke fant noe tilsvarende java.math.BigInteger i Golang. Vi prøvde å implementere primtall-sortering i Golang, men valgte å stoppe når vi kom til primitive  røtter av primtall når vi innså at det ville blitt vår egen implementering av nøkkelutveksling, som er utenfor våre egenskaper på dette tidspunktet. 
+Vi har vedlagt inputtest.go som sorterer primtall, og javakode i diffie-hellman.java og en jar-fil som viser en lokal form av Diffie-Hellman. 
+>>>>>>> dc10d6e2b053d5ce086b6dccc3bfaaa8c11906ec
