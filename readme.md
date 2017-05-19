@@ -24,11 +24,6 @@ https://gist.github.com/manishtpatel/8222606
 
 ## c)
 
-I wireshark kan vi filtrere etter protocoll for å finne de pakkene vi er interisert i. Det er mulig å kombinere filterkrav med hjelp av opperatører som && (and) og || (or).
-
-```ip.proto == "TCP"```
-```ip.proto == "UDP"```
-
 
 ![Alt Text](https://github.com/IS105-Gruppe05/ICA07/blob/master/Bilder/Bilde2.png)
 
@@ -50,11 +45,17 @@ Med wireshark kan vi se hvor mange bytes som sendes over udp med meldingen vår 
  
 ## i 2)
 Mange ulike tjenester begrenser de største UDP pakkene til rundt 1472(Trekke ifra UDP og IP header på henholdsvis 8 og 20bytes.). Det er mulig å gå over ca 1472 bytes men da risikerer man packet loss og andre problemer har større sannsynlighet for å oppstå. Når vi referrer til det største en UDP pakke kan være, så tar vi i betrakning at pakkene brytes opp i biter pga Ethernet 2s MTU(Maximum transmission unit) begrensning.. Dette er noe vi også gjør for TCP pakker, som kommer lenger ned.
-
 ## ii: Over NIC.
-## 1)
-## 2)
-## 3)	
+## ii 1)
+## ii 2)
+
+I wireshark kan vi filtrere etter protocoll for å finne de pakkene vi er interisert i. Det er mulig å kombinere filterkrav med hjelp av opperatører som ```&&``` (and) og ```||``` (or).
+
+```ip.proto == "TCP"```
+```ip.proto == "UDP"```
+
+
+## ii 3)	
 
 
 
