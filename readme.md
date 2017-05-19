@@ -49,6 +49,7 @@ Mange ulike tjenester begrenser de største UDP pakkene til rundt 1472(Trekke if
 ## ii 1)
 
 ![Alt text](https://i.gyazo.com/432f797006229363553698bbb662e67f.png)
+
 Her kan vi se prosenten på protokollen på UDP og TCP pakker. 
 
 ## ii 2)
